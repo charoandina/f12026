@@ -48,39 +48,49 @@ function getPostIdFromURL() {
 }
 
 async function loadPostMeta(id) {
-  try {
-    const res = await fetch("blog/data/posts.json", { cache: "no-store" });
-    if (!res.ok) throw new Error();
-
-    const data = await res.json();
-    if (!Array.isArray(data)) return null;
-
-    return data.find(p => p && p.id === id) || null;
-  } catch (err) {
-    console.error("Failed to load posts.json:", err);
-    return null;
+  const candidates = ["blog/data/posts.json", "/blog/data/posts.json"];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (!Array.isArray(data)) return null;
+      return data.find(p => p && p.id === id) || null;
+    } catch (err) {
+      // try next
+    }
   }
+  console.error("Failed to load posts.json from any candidate");
+  return null;
 }
 
 async function loadPostContent(id) {
-  try {
-    const res = await fetch(`blog/content/${encodeURIComponent(id)}.html`, { cache: "no-store" });
-    if (!res.ok) throw new Error();
-    return await res.text();
-  } catch (err) {
-    console.error("Failed to load post content:", err);
-    return "";
+  const candidates = [`blog/content/${encodeURIComponent(id)}.html`, `/blog/content/${encodeURIComponent(id)}.html`];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) continue;
+      return await res.text();
+    } catch (err) {
+      // try next
+    }
   }
+  console.error(`Failed to load post content for id=${id}`);
+  return "";
 }
 
 async function loadAllPosts() {
-  try {
-    const res = await fetch("blog/data/posts.json", { cache: "no-store" });
-    if (!res.ok) throw new Error();
-    return await res.json();
-  } catch {
-    return [];
+  const candidates = ["blog/data/posts.json", "/blog/data/posts.json"];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) continue;
+      return await res.json();
+    } catch (err) {
+      // try next
+    }
   }
+  return [];
 }
 
 // ------------------------------------------------------

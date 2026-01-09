@@ -93,15 +93,18 @@ function renderFeatured(post) {
 
 
 async function loadPosts() {
-  try {
-    // If miopinion.html is at root and JSON is /blog/data/posts.json:
-    const res = await fetch("blog/data/posts.json", { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    return await res.json();
-  } catch (err) {
-    console.error("Failed to load posts.json:", err);
-    return [];
+  const candidates = ["blog/data/posts.json", "/blog/data/posts.json"];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) continue;
+      return await res.json();
+    } catch (err) {
+      // try next
+    }
   }
+  console.error("Failed to load posts.json from any candidate");
+  return [];
 }
 
 function renderList(container, postsArr, count) {

@@ -50,13 +50,18 @@ async function initIndexPosts() {
 // ======================= helpers =======================
 
 async function loadPosts() {
-  try {
-    const res = await fetch("blog/data/posts.json", { cache: "no-store" });
-    if (!res.ok) throw new Error();
-    return await res.json();
-  } catch {
-    return [];
+  // Try relative path first, then absolute-from-root for different hosting setups
+  const candidates = ["blog/data/posts.json", "/blog/data/posts.json"];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) continue;
+      return await res.json();
+    } catch (e) {
+      // try next
+    }
   }
+  return [];
 }
 
 function cardHTML(p) {
