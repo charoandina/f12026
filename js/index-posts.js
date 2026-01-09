@@ -42,7 +42,7 @@ async function initIndexPosts() {
   listContainer.querySelectorAll(".last_opinion").forEach(card => {
     card.addEventListener("click", () => {
       const id = card.getAttribute("data-id");
-      window.location.href = `/post.html?id=${encodeURIComponent(id)}`;
+      window.location.href = `post.html?id=${encodeURIComponent(id)}`;
     });
   });
 }
@@ -51,7 +51,7 @@ async function initIndexPosts() {
 
 async function loadPosts() {
   try {
-    const res = await fetch("/blog/data/posts.json", { cache: "no-store" });
+    const res = await fetch("blog/data/posts.json", { cache: "no-store" });
     if (!res.ok) throw new Error();
     return await res.json();
   } catch {
@@ -97,8 +97,10 @@ function formatFechaTexto(dateStr) {
 }
 
 function normalizeImg(path) {
-  if (path.startsWith("http") || path.startsWith("/")) return path;
-  return "/" + path;
+  if (!path) return "";
+  if (path.startsWith("http")) return path;
+  // Use relative paths for GitHub Pages (strip leading slash if present)
+  return path.startsWith("/") ? path.slice(1) : path;
 }
 
 function escapeHTML(str) {

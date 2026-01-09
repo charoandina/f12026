@@ -115,7 +115,7 @@ function renderList(container, postsArr, count) {
   container.querySelectorAll(".last_opinion").forEach((el) => {
     el.addEventListener("click", () => {
       const id = el.getAttribute("data-id");
-      window.location.href = `/post.html?id=${encodeURIComponent(id)}`;
+      window.location.href = `post.html?id=${encodeURIComponent(id)}`;
     });
   });
 }
@@ -215,11 +215,10 @@ function formatFechaTexto(dateStr) {
 }
 
 function normalizeImg(path) {
-  // Ensure leading slash for root assets
   if (!path) return "";
   if (path.startsWith("http")) return path;
-  if (path.startsWith("/")) return path;
-  return "/" + path;
+  // Use relative paths for GitHub Pages (strip leading slash if present)
+  return path.startsWith("/") ? path.slice(1) : path;
 }
 
 function escapeHTML(str) {

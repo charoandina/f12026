@@ -7,7 +7,7 @@ async function init() {
   // 1) Get post id from URL: /post.html?id=...
   const id = getPostIdFromURL();
   if (!id) {
-    window.location.href = "/miopinion.html";
+    window.location.href = "miopinion.html";
     return;
   }
 
@@ -49,7 +49,7 @@ function getPostIdFromURL() {
 
 async function loadPostMeta(id) {
   try {
-    const res = await fetch("/blog/data/posts.json", { cache: "no-store" });
+    const res = await fetch("blog/data/posts.json", { cache: "no-store" });
     if (!res.ok) throw new Error();
 
     const data = await res.json();
@@ -64,7 +64,7 @@ async function loadPostMeta(id) {
 
 async function loadPostContent(id) {
   try {
-    const res = await fetch(`/blog/content/${encodeURIComponent(id)}.html`, { cache: "no-store" });
+    const res = await fetch(`blog/content/${encodeURIComponent(id)}.html`, { cache: "no-store" });
     if (!res.ok) throw new Error();
     return await res.text();
   } catch (err) {
@@ -75,7 +75,7 @@ async function loadPostContent(id) {
 
 async function loadAllPosts() {
   try {
-    const res = await fetch("/blog/data/posts.json", { cache: "no-store" });
+    const res = await fetch("blog/data/posts.json", { cache: "no-store" });
     if (!res.ok) throw new Error();
     return await res.json();
   } catch {
@@ -186,7 +186,7 @@ function renderNotFound(id) {
   if (contentEl) {
     contentEl.innerHTML = `
       <p>No existe una nota con id: <strong>${escapeHTML(id)}</strong>.</p>
-      <p><a href="/miopinion.html">Volver a Mi Opinión</a></p>
+      <p><a href="miopinion.html">Volver a Mi Opinión</a></p>
     `;
   }
 }
@@ -197,8 +197,8 @@ function renderContentMissing(id) {
 
   contentEl.innerHTML = `
     <p>Encontré la nota en el JSON, pero falta el archivo:</p>
-    <p><code>/blog/content/${escapeHTML(id)}.html</code></p>
-    <p><a href="/miopinion.html">Volver a Mi Opinión</a></p>
+    <p><code>blog/content/${escapeHTML(id)}.html</code></p>
+    <p><a href="miopinion.html">Volver a Mi Opinión</a></p>
   `;
 }
 
@@ -208,8 +208,9 @@ function renderContentMissing(id) {
 
 function normalizeImg(path) {
   if (!path) return "";
-  if (path.startsWith("http") || path.startsWith("/")) return path;
-  return "/" + path;
+  if (path.startsWith("http")) return path;
+  // Use relative paths for GitHub Pages (strip leading slash if present)
+  return path.startsWith("/") ? path.slice(1) : path;
 }
 
 function parseESDate(dateStr) {
