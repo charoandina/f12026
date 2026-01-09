@@ -196,6 +196,8 @@ main{
     border: var(--border-grey);
     cursor: pointer;
     background-color: #1b1718;
+    width: 30px;
+    height: 30px;
 }
 
 .s_button svg{
