@@ -88,7 +88,7 @@ function renderFeatured(post) {
 
   date.textContent = formatFechaTexto(post.fecha);
 
-  link.href = `/post.html?id=${encodeURIComponent(post.id)}`;
+  link.href = `post.html?id=${encodeURIComponent(post.id)}`;
 }
 
 

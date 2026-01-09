@@ -32,7 +32,7 @@ async function initIndexPosts() {
   featuredText.textContent = truncate(featured.excerpt || "", 300);
   featuredAuthor.textContent = `Por ${featured.autor}`;
   featuredDate.textContent = formatFechaTexto(featured.fecha);
-  featuredLink.href = `/post.html?id=${encodeURIComponent(featured.id)}`;
+  featuredLink.href = `post.html?id=${encodeURIComponent(featured.id)}`;
 
   // ===== LAST 3 =====
   const lastThree = posts.slice(1, 4);
