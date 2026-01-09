@@ -1,0 +1,436 @@
+:root {
+    --title-font: "Chakra Petch", system-ui, sans-serif;
+    --text-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --subtitle-font: "Rajdhani", system-ui, sans-serif;
+    --red-color: #cc0000;
+    --text-color: #94a3b8;
+    --white-color: #fff;
+    --grey-color: #96999d;
+    --border-radius: 8px;
+    --padding-top: 60px;
+    --padding-bottom: 60px;
+    --border-grey: 1px solid #FFFFFF1A;
+    --redbg-hover: #bf0000;
+    --red-gradient: linear-gradient(to right, var(--red-color) 0%, rgba(255, 0, 59, 0.6) 100%);
+    --dark-bg: #0a0d12;
+}
+
+/* AFTER TITLES GRADIENT ADD
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+*/
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--dark-bg);
+}
+
+.back-btn{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.back-btn button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.back-btn button p{
+    color: var(--text-color);
+    font-weight: 500;
+    font-family: var(--text-font);
+    font-size: 16px;
+}
+
+
+/* MAIN */
+
+main{
+    padding-top: var(--padding-top);
+}
+
+.main_container{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.artile_title{
+    width: 100%;
+    padding-bottom: 32px;
+    border-bottom: var(--border-grey);
+}
+
+.artile_title h1{
+    font-family: var(--title-font);
+    color: var(--white-color);
+    font-size: 60px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+.article_data{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 24px;
+    margin-bottom: 32px;
+}
+
+.article_author{
+    display: flex;
+    align-items: flex-start;
+    max-width: 377px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.autor_img_container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: var(--border-grey);
+}
+
+.adrian_img{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom right, rgba(255, 0, 59, 1), rgba(255, 0, 59, 0.6));
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.adrian_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.author p{
+    font-family: var(--text-font);
+    color: var(--white-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.author span{
+    font-family: var(--text-font);
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 14px;
+}   
+
+.article_date{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-top: 12px;
+}
+
+.article_date p{
+    font-family: var(--text-font);
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.article_date svg{
+    width: 15px;
+    height: 15px;
+}
+
+.share_container{
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    width: 100%;
+    gap: 12px;
+}
+
+.share_container p{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.share_buttons{
+    display: flex;
+    gap: 12px;
+}
+
+.s_button{
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 6px;
+    border: var(--border-grey);
+    cursor: pointer;
+    background-color: #1b1718;
+}
+
+.s_button svg{
+    width: 15px;
+    height: 15px;
+}
+
+.share_x{
+    padding: 8px;
+}
+
+.share_x:hover{
+    background-color: var(--red-color);
+}
+
+.share_facebook:hover{
+    background-color: #3b5998;
+}
+
+.share_instagram:hover{
+    background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 70%,
+    #285AEB 100%);
+}
+
+.article_image_container{
+    width: 100%;
+}
+
+.article_image_container img{
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.article_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    padding-top: var(--padding-top);
+}
+
+.article_content p{
+    font-family: var(--text-font);
+    color: var(--white-color);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.article_content p span{
+    font-weight: 600;
+}
+
+.italic{
+    font-style: italic;
+    font-weight: 400 !important;
+}
+
+.ph{
+    margin-top: 2rem !important;
+    font-size: 0.9rem !important;
+    font-family: var(--text-font);
+}
+
+.podcast-spoty{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.podcast-spoty img{
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.podcast-spoty p{
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-size: 16pxrem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.podcast-spoty p:hover{
+    text-decoration: underline;
+}
+
+
+/* THIRD SECTION - LAST OPINIONS */
+
+.third_wrapper{
+    padding-bottom: var(--padding-bottom);
+    background-color: #0a0d12;
+    padding-top: var(--padding-top);
+}
+
+.third_container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third_title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third_title h2{
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--white-color);
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 60px;
+}
+
+.third_title h2 span{
+    background: linear-gradient(to right, var(--red-color) 0%, rgba(255, 0, 59, 0.6) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.third_title button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.third_title button a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--title-font);
+    letter-spacing: 0.7px;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .5s all ease;
+}
+
+.third_title button a:hover{
+    color: var(--red-color);
+}
+
+.lastopinions_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.last_opinion{
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    cursor: pointer;
+    border: var(--border-grey);
+    border-radius: var(--border-radius);
+    transition: color 0.3s ease;
+}
+
+.last_opinion:hover{
+    border: 1px solid var(--redbg-hover);
+}
+
+.last_opinion img{
+    max-width: 450px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: var(--border-grey);
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 16px;
+}
+
+.last_opinion_text{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 14px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    border-bottom: var(--border-grey);
+    padding-bottom: 16px;
+}
+
+.last_opinion div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 8px;
+    padding: 0 16px 16px 16px;
+}
+
+.last_opinion div h4{
+    font-family: var(--title-font);
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.last_opinion div svg{
+    width: 12px;
+    height: 12px;
+}
+
+.last_opinion h3{
+    font-family: var(--title-font);
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    transition: all .3s ease;
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+.last_opinion:hover h3 {
+    color: var(--red-color);
+}

@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/calendario.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <title>Telemetrico</title>
+</head>
+<body>
+<!--HEADER-->
+<header>
+    <div class="header_container">
+        <div class="header_logo">
+            <a href="/index.html"><img src="img/index/logo.webp" alt="Logo Telemetrico"></a>
+        </div>
+
+        <div class="header_navigation">
+            <button class="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="menu-wrapper">
+                <ul class="menu-wrapper-list">
+                    <li><a href="/miopinion.html">MI OPINIÓN</a></li>
+                    <li><a href="/transmisiones.html">TRANSMISIONES</a></li>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">CAMPEONATO</a>
+                        <ul class="submenu">
+                        <li><a href="/pilotos.html">PILOTOS</a></li>
+                        <li><a href="/escuderias.html">ESCUDERÍAS</a></li>
+                        <li><a href="/calendario.html">CALENDARIO</a></li>
+                        <li><a href="/posiciones.html">POSICIONES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/guia.html">GUIA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="main_container">
+        <div class="main_title">
+            <h1><span>Calendario</span></h1>
+            <h2>Todas las carreras de la temporada de Fórmula 1. Fechas, horarios y circuitos confirmados.</h2>
+        </div>
+
+        <div class="calendar_container">
+            <!--AUSTRALIA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/australian.webp" alt="">
+                        <p>Ronda 1</p>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Australia</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Albert Park</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>6 al 8 de marzo</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>12:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">307.574 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">58</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:24.125</p>
+                            <span class="value_pilot">Michael Schumacher (2004)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">238 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CHINA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/china.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 2</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <div class="sprint_race">
+                            <h3>Gran Premio de China</h3>
+                            <div class="sprint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>SPRINT</p>
+                            </div>
+                        </div>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito Internacional de Shanghai</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>13 al 15 de marzo</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>2:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">305.066 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">56</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:32.238</p>
+                            <span class="value_pilot">Michael Schumacher (2004)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">205 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--JAPON-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/japanese.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 3</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Japón</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Suzuka</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>26 al 29 de marzo</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>1:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">307.471 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">53</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:30.965</p>
+                            <span class="value_pilot">Kimi Antonelli (2025)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">230 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--BAREIN-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/bahrain.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 4</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Baréin</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito Internacional de Baréin</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>10 al 12 de abril</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>11:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">308.238 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">57</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:31.447</p>
+                            <span class="value_pilot">Pedro de la Rosa (2005)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">240 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ARABIA SAUDI-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/saudi-arabia.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 5</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Arabia Saudí</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Jeddah Corniche</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>17 al 19 de abril</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>12:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">308.450 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">50</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:30.734</p>
+                            <span class="value_pilot">Lewis Hamilton (2021)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">250 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MIAMI-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/united-states.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 6</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <div class="sprint_race">
+                            <h3>Gran Premio de Miami</h3>
+                            <div class="sprint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>SPRINT</p>
+                            </div>
+                        </div>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Autódromo Internacional de Miami</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>1 al 3 de mayo</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>3:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">308.326 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">57</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:29.708</p>
+                            <span class="value_pilot">Max Verstappen (2023)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">215 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--CANADA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/canadian.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 7</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <div class="sprint_race">
+                            <h3>Gran Premio de Canadá</h3>
+                            <div class="sprint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>SPRINT</p>
+                            </div>
+                        </div>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito Gilles Villeneuve</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>22 al 24 de mayo</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>1:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">305.270 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">70</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:13.078</p>
+                            <span class="value_pilot">Valtteri Bottas (2019)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">210 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MONACO-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/monegasque.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 8</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Mónaco</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Mónaco</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>5 al 7 de junio</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">260.286 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">78</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:12.909</p>
+                            <span class="value_pilot">Lewis Hamilton (2021)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">160 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--ESPAÑA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/spanish.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 8</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de España</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuit de Barcelona-Catalunya</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>12 al 14 de junio</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">307.236 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">66</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:15.743</p>
+                            <span class="value_pilot">Oscar Piastri (2025)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">220 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--AUSTRIA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/austria.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 10</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Austria</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Red Bull Ring</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>26 al 28 de junio</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">307.018 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">71</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:07.924</p>
+                            <span class="value_pilot">Oscar Piastri (2025)</span>                            
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">225 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--GRAN BRETAÑA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/british.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 11</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <div class="sprint_race">
+                            <h3>Gran Premio de Gran Bretaña</h3>
+                            <div class="sprint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>SPRINT</p>
+                            </div>
+                        </div>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Silverstone</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>3 al 5 de julio</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>9:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">306.198 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">52</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:27.097</p>
+                            <span class="value_pilot">Max Verstappen (2020)</span>                            
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">230 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--BELGICA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/belgium.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 12</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Bélgica</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Spa-Francorchamps</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>17 al 19 de julio</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">308.052 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">44</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:44.701</p>
+                            <span class="value_pilot">Sergio Pérez (2024)</span>                           
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">230 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--HUNGRIA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/hungary.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 13</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Hungría</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Hungaroring</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>24 al 26 de julio</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">306.630 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">70</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:16.627</p>
+                            <span class="value_pilot">Lewis Hamilton (2020)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">200 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--PAISES BAJOS-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/dutch.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 14</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <div class="sprint_race">
+                            <h3>Gran Premio de Países Bajos</h3>
+                            <div class="sprint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>SPRINT</p>
+                            </div>
+                        </div>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Zandvoort</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>21 al 23 de agosto</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">306.587 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">72</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:11.097</p>
+                            <span class="value_pilot">Lewis Hamilton (2021)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">215 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ITALIA-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/italian.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 15</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Italia</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Autódromo de Monza</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>4 al 6 de septiembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">306.720 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">53</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:20.901</p>
+                            <span class="value_pilot">Lando Norris (2025)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">260 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MADRID-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/spanish.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 16</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Madrid</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Madrid</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>11 al 13 de septiembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">-</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">-</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">-</p>
+                            <span class="value_pilot">-</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--AZERBAIYAN-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/azerbaijan.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 17</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Azerbaiyán</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Bakú</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>24 al 26 de septiembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>7:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">306.049 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">51</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:43.009</p>
+                            <span class="value_pilot">Charles Leclerc (2019)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">215 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SINGAPUR-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/singapore.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 18</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                            <div class="sprint_race">
+                            <h3>Gran Premio de Singapur</h3>
+                            <div class="sprint">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>SPRINT</p>
+                            </div>
+                        </div>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Marina Bay</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>9 al 11 de octubre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>7:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">305.337 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">62</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:33.808</p>
+                            <span class="value_pilot">Lewis Hamilton (2025)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">180 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ESTADOS UNIDOS-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/united-states.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 19</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Estados Unidos</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de las Américas</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>23 al 25 de octubre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>2:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">308.405 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">56</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:36.169</p>
+                            <span class="value_pilot">Charles Leclerc (2019)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">210 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MEXICO-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/mexico.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 20</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de México</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Autódromo Hermanos Rodríguez</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>30 de octubre al 1 de noviembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>3:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">305.354 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">71</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:17.774</p>
+                            <span class="value_pilot">Valtteri Bottas (2021)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">195 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--BRASIL-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/brazilian.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 21</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Brasil</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Autódromo José Carlos Pace</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>6 al 8 de noviembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>1:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">305.879 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">71</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:10.540</p>
+                            <span class="value_pilot">Valtteri Bottas (2018)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">220 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--LAS VEGAS-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/united-states.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 22</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Las Vegas</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito de Las Vegas</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>19 al 22 de noviembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>10:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">309.958 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">50</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:33.365</p>
+                            <span class="value_pilot">Max Verstappen (2025)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">240 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--QATAR-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/qatar.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 23</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Qatar</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Circuito Internacional de Losail</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>27 al 29 de noviembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>12:00 p.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">308.611 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">57</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:22.384</p>
+                            <span class="value_pilot">Lando Norris (2024)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">215 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ABU DHABI-->
+            <div class="race">
+                <div class="raceinfo_container">
+                    <div class="racenumber_container">
+                        <img src="img/rounded-flags/united-arab-emirates.webp" alt="">
+                        <div class="race_number">
+                            <p>Ronda 24</p>
+                        </div>
+                    </div>
+                    <div class="racename_container">
+                        <h3>Gran Premio de Abu Dhabi</h3>
+                        <div class="race_location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <p>Gran Premio de Abu Dhabi</p>
+                        </div>
+                    </div>
+                    <div class="racedate_container">
+                        <div class="racedate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                            <p>4 al 6 de diciembre</p>
+                        </div>
+                    </div>
+                    <div class="racetime_container">
+                        <div class="racetime">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            <p>8:00 a.m.</p>
+                        </div>
+                        <p class="hs">HORA ARG</p>
+                    </div>
+                    <div class="racestatus_container">
+                        <div class="racestatus">
+                            <p>PRÓXIMO</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+                    </div>
+                </div>
+                <div class="racestats_container hidden">
+                    <div class="racestats">
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                                <p>DISTANCIA</p>
+                            </div>
+                            <p class="value">306.183 km</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                                <p>Vueltas</p>
+                            </div>
+                            <p class="value">58</p>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                                <p>Récord de Carrera</p>
+                            </div>
+                            <p class="value">1:25.637</p>
+                            <span class="value_pilot">Kevin Magnussen (2024)</span>
+                        </div>
+                        <div class="racestat">
+                            <div class="stat">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                                <p>Velocidad Promedio</p>
+                            </div>
+                            <p class="value">210 km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+</main>
+
+<section class="secondsection_wrapper">
+    <div class="secondsection_container">
+        <div class="items_container">
+            <div class="item">
+                <h3>24</h3>
+                <h4>GRANDES PREMIOS</h4>
+            </div>
+            <div class="item">
+                <h3>120</h3>
+                <h4>SESIONES OFICIALES</h4>
+            </div>
+            <div class="item">
+                <h3>9</h3>
+                <h4>MESES DE ACCIÓN</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--FOOTER-->
+<footer>
+    <div class="footer_container">
+        <div class="footer_info">
+            <div class="footer_logo">
+                <img src="img/index/logo.webp" alt="Logo Telemetrico">
+                <p>La plataforma de F1 independiente definitiva. Análisis basado en datos, comunidad apasionada y las noticias más rápidas de la parrilla.</p>
+                
+                <div class="footersocial">
+                    <ul>
+                        <li><a href=""><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-5 h-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music2 lucide-music-2 w-5 h-5" aria-hidden="true"><circle cx="8" cy="18" r="4"></circle><path d="M12 18V2l7 4"></path></svg></a></li>
+                    </ul>
+                </div>
+                <span>🚀 Desarrollado por <a href="">Rosario García de Andina</a></span>
+            </div>
+            <div class="footer_links">
+                <h4>PLATAFORMA</h4>
+                <ul>
+                    <li><a href="miopinion.html">Opiniones</a></li>
+                    <li><a href="transmisiones.html">Centro de Videos</a></li>
+                    <li><a href="calendario.html">Calendario de Carreras</a></li>
+                    <li><a href="pilotos.html">Pilotos</a></li>
+                    <li><a href="escuderias.html">Escuderias</a></li>
+                    <li><a href="guia.html">Análisis Técnico</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_rights">
+            <div class="copy">
+                <p>© 2025 Telemetrico F1. Todos los derechos reservados. Medios F1 No Oficiales.</p>
+            </div>
+            <div class="copy_links">
+                <ul>
+                    <li><a href="">Política de Privacidad</a></li>
+                    <li><a href="">Términos de Servicio</a></li>
+                    <li><a href="">Configuración de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/calendario.js"></script>
+<script src="js/header-footer.js"></script>
+</body>
+</html>

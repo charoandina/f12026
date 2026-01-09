@@ -1,0 +1,490 @@
+:root {
+  --title-font: "Chakra Petch", system-ui, sans-serif;
+  --text-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --subtitle-font: "Rajdhani", system-ui, sans-serif;
+  --red-color: #cc0000;
+  --text-color: #94a3b8;
+  --white-color: #fff;
+  --grey-color: #96999d;
+  --border-radius: 8px;
+  --padding-top: 60px;
+  --padding-bottom: 60px;
+  --border-grey: 1px solid #ffffff1a;
+  --redbg-hover: #bf0000;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  border-bottom: 1px solid #ffffff1a;
+  width: 100%;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  max-width: 322px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* ===== Base ===== */
+.header_navigation {
+  position: relative;
+}
+
+.menu-wrapper-list,
+.submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-wrapper-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu-wrapper a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--title-font);
+  color: var(--grey-color);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  transition: 0.5s all ease-in;
+}
+
+.menu-wrapper a:hover {
+  color: var(--red-color);
+}
+
+/* Submenu base */
+.has-submenu {
+  position: relative;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 200px;
+  background: #0b0b0b;
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  padding: 10px;
+  display: none; /* default (mobile + fallback) */
+  z-index: 1000;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+/* ===== Desktop dropdown (hover) ===== */
+@media (min-width: 901px) {
+  .hamburger {
+    display: none;
+  }
+
+  /* Desktop: make dropdown stable (no flicker) */
+  .has-submenu > .submenu {
+    display: block; /* keep it in DOM flow */
+    opacity: 0;
+    /* allow the submenu to receive pointer events even while hidden so
+       small fast mouse movements into the overlap keep it open */
+    pointer-events: auto;
+    /* place submenu overlapping the toggle slightly to avoid any gap */
+    top: 30px;
+    right: 0;
+
+    transform: translateY(-8px);
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+    z-index: 99999;
+  }
+
+  /* Open on hover/focus */
+  .has-submenu:hover > .submenu,
+  .has-submenu:focus-within > .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  /* JS-driven class to keep submenu open for short mouse movements */
+  .has-submenu.hover-open > .submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  /* Optional: make the "CAMPEONATO" link feel like a label */
+  .submenu-toggle {
+    cursor: default;
+  }
+}
+
+/* ===== Mobile menu ===== */
+.hamburger {
+  width: 42px;
+  height: 36px;
+  display: none; /* se habilita en mobile */
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-direction: column;
+  background: transparent;
+  border: var(--border-grey);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: inline-flex;
+  }
+
+  .menu-wrapper {
+    display: none;
+    /* make mobile menu full-viewport width and overlay below header */
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0 auto;
+    background: #0b0b0b;
+    border: var(--border-grey);
+    padding: 8px 12px;
+    z-index: 99999;
+    box-sizing: border-box;
+  }
+
+  .menu-wrapper.is-open {
+    display: block;
+  }
+
+  .menu-wrapper-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Make items fill the menu width so text doesn't wrap vertically */
+  .menu-wrapper-list a {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: var(--grey-color);
+  }
+
+  .menu-wrapper-list a:hover {
+    color: var(--red-color);
+  }
+
+  /* En mobile el submenu NO es absoluto */
+  .submenu {
+    position: static;
+    min-width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    border: none;
+    display: none;
+    opacity: 1; /* reset desktop behavior */
+    visibility: visible; /* reset desktop behavior */
+    pointer-events: auto; /* reset desktop behavior */
+    transform: none; /* reset desktop behavior */
+    transition: none; /* reset desktop behavior */
+  }
+
+  .has-submenu.is-open > .submenu {
+    display: block;
+  }
+
+  .submenu-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Flechita opcional */
+  .submenu-toggle::after {
+    content: "▾";
+    opacity: 0.8;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+  }
+  .has-submenu.is-open > .submenu-toggle::after {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 485px) {
+  .header_logo {
+    max-width: 200px;
+  }
+}
+
+/* ===== Minimal navbar behavior styles (unopinionated) ===== */
+.site-nav {
+  position: relative;
+}
+
+.site-nav .hamburger {
+  display: none; /* shown on mobile via media query below */
+}
+
+.site-nav .nav-list {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  list-style: none;
+}
+
+.site-nav .nav-item {
+  position: relative;
+}
+
+.site-nav .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: inherit;
+  list-style: none;
+  padding: 6px 0;
+  min-width: 160px;
+}
+
+.site-nav .has-submenu.hover > .submenu,
+.site-nav .has-submenu:hover > .submenu,
+.site-nav .has-submenu.is-open > .submenu {
+  display: block;
+}
+
+/* Mobile adjustments */
+@media (max-width: 900px) {
+  .site-nav .hamburger {
+    display: inline-flex;
+  }
+  .site-nav .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+  .site-nav .nav-list.is-open {
+    display: flex;
+  }
+  .site-nav .submenu {
+    position: static;
+  }
+  .site-nav .has-submenu.is-open > .submenu {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-wrapper {
+    width: 100%;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
+  overflow: visible;
+  z-index: 9999;
+
+  background: transparent;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Ensure the mobile menu doesn't create horizontal overflow */
+.menu-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  overflow: visible;
+}
+
+/* Background cuando hay scroll */
+header.is-sticky {
+  background: #0a0d12;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+body {
+  padding-top: 0px;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: var(--border-grey);
+  background-color: #000;
+  padding-bottom: 16px;
+  padding-top: var(--padding-top);
+}
+
+.footer_container {
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.footer_info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+
+.footer_logo {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer_logo img {
+  width: 100%;
+}
+
+.footer_logo p,
+.footer_logo span {
+  font-family: var(--text-font);
+  color: var(--text-color);
+  font-size: 12px;
+  width: 100%;
+}
+
+.footer_logo span a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footersocial ul {
+  display: flex;
+  gap: 16px;
+}
+
+.footersocial ul li {
+  list-style-type: none;
+}
+
+.footersocial ul li a {
+  text-decoration: none;
+  color: var(--grey-color);
+}
+
+.footersocial ul li a svg {
+  width: 30px;
+  height: 30px;
+}
+
+.footersocial ul li a svg:hover {
+  color: var(--red-color);
+}
+
+.footer_links {
+  text-align: right;
+}
+
+.footer_links h4 {
+  font-family: var(--title-font);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer_links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer_links ul li {
+  list-style-type: none;
+}
+
+.footer_links ul li a {
+  text-decoration: none;
+  color: var(--grey-color);
+  font-family: var(--text-font);
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+.footer_links ul li a:hover {
+  color: var(--red-color);
+}
+
+.footer_rights {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: var(--border-grey);
+  padding-top: 16px;
+}
+
+.copy p {
+  color: var(--grey-color);
+  font-family: var(--text-font);
+  font-size: 14px;
+}
+
+.copy_links ul {
+  display: flex;
+  gap: 24px;
+}
+
+.copy_links ul li {
+  list-style-type: none;
+}
+
+.copy_links ul li a {
+  text-decoration: none;
+  color: var(--grey-color);
+  font-family: var(--text-font);
+  font-size: 14px;
+  transition: all 0.5s ease;
+}

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/pilotos.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <title>Telemetrico</title>
+</head>
+<body>
+<!--HEADER-->
+<header>
+    <div class="header_container">
+        <div class="header_logo">
+            <a href="/index.html"><img src="img/index/logo.webp" alt="Logo Telemetrico"></a>
+        </div>
+
+        <div class="header_navigation">
+            <button class="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="menu-wrapper">
+                <ul class="menu-wrapper-list">
+                    <li><a href="/miopinion.html">MI OPINIÓN</a></li>
+                    <li><a href="/transmisiones.html">TRANSMISIONES</a></li>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">CAMPEONATO</a>
+                        <ul class="submenu">
+                        <li><a href="/pilotos.html">PILOTOS</a></li>
+                        <li><a href="/escuderias.html">ESCUDERÍAS</a></li>
+                        <li><a href="/calendario.html">CALENDARIO</a></li>
+                        <li><a href="/posiciones.html">POSICIONES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/guia.html">GUIA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="main_container">
+        <div class="main_title">
+            <h1><span>PILOTOS</span></h1>
+            <h2>Conocé a los 22 pilotos del Campeonato Mundial de Fórmula 1 2026. <span>Hacé click en una tarjeta para más detalles.</span></h2>
+        </div>
+
+        <div class="drivers">
+            <!--MCLAREN-->
+            <!--LANDO NORRIS-->
+            <div class="driver mclaren" data-ergast-id="norris">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/british.webp" alt="">
+                        <p>GRAN BRETAÑA</p>
+                    </div>
+                    <h3 class="name">Lando <span>Norris</span></h3>
+                    <h4 class="team">MCLAREN</h4>
+                    <div class="championships">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffb900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path><path d="M5 21h14"></path></svg>
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>1</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/landonorris.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--OSCAR PIASTRI-->
+            <div class="driver mclaren" data-ergast-id="piastri">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/australian.webp
+                        " alt="">
+                        <p>AUSTRALIA</p>
+                    </div>
+                    <h3 class="name">Oscar <span>Piastri</span></h3>
+                    <h4 class="team">MCLAREN</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>81</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/oscarpiastri.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--MERCEDES-->
+            <!--KIMI ANTONELLI-->
+            <div class="driver mercedes" data-ergast-id="antonelli">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/italian.webp" alt="">
+                        <p>ITALIA</p>
+                    </div>
+                    <h3 class="name">Kimi <span>Antonelli</span></h3>
+                    <h4 class="team">MERCEDES</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>12</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/andreakimiantonelli.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--GEORGE RUSSELL-->
+            <div class="driver mercedes" data-ergast-id="russell">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/british.webp" alt="">
+                        <p>GRAN BRETAÑA</p>
+                    </div>
+                    <h3 class="name">George <span>Russell</span></h3>
+                    <h4 class="team">MERCEDES</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>63</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/georgerussell.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--FERRARI-->
+            <!--CHARLES LECLERC-->
+            <div class="driver ferrari" data-ergast-id="leclerc">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/monegasque.webp" alt="">
+                        <p>MONACO</p>
+                    </div>
+                    <h3 class="name">Charles <span>Leclerc</span></h3>
+                    <h4 class="team">FERRARI</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>16</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/charlesleclerc.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--LEWIS HAMILTON-->
+            <div class="driver ferrari" data-ergast-id="hamilton">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/british.webp" alt="">
+                        <p>GRAN BRETAÑA</p>
+                    </div>
+                    <h3 class="name">Lewis <span>Hamilton</span></h3>
+                    <h4 class="team">FERRARI</h4>
+                    <div class="championships">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffb900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path><path d="M5 21h14"></path></svg>
+                        <p>7</p>
+                    </div>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>44</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/lewishamilton.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--RED BULL-->
+            <!--MAX VERSTAPPEN-->
+            <div class="driver redbull" data-ergast-id="max_verstappen">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/dutch.webp" alt="">
+                        <p>PAÍSES BAJOS</p>
+                    </div>
+                    <h3 class="name">Max <span>Verstappen</span></h3>
+                    <h4 class="team">RED BULL</h4>
+                    <div class="championships">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffb900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path><path d="M5 21h14"></path></svg>
+                        <p>4</p>
+                    </div>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>3</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/maxverstappen.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--ISACK HADJAR-->
+            <div class="driver redbull" data-ergast-id="hadjar">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/french.webp" alt="">
+                        <p>FRANCIA</p>
+                    </div>
+                    <h3 class="name">Isack <span>Hadjar</span></h3>
+                    <h4 class="team">RED BULL</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>6</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/isackhadjar.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--WILLIAMS-->
+            <!--ALEX ALBON-->
+            <div class="driver williams" data-ergast-id="albon">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/thai.webp" alt="">
+                        <p>TAILANDIA</p>
+                    </div>
+                    <h3 class="name">Alexander <span>Albon</span></h3>
+                    <h4 class="team">WILLIAMS</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>23</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/alexanderalbon.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--CARLOS SAINZ-->
+            <div class="driver williams" data-ergast-id="sainz">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/spanish.webp" alt="">
+                        <p>ESPAÑA</p>
+                    </div>
+                    <h3 class="name">Carlos <span>Sainz</span></h3>
+                    <h4 class="team">WILLIAMS</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>55</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/carlossainz.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--RACING BULLS-->
+            <!--LIAM LAWSON-->
+            <div class="driver racingbulls" data-ergast-id="lawson">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/newzealander.webp" alt="">
+                        <p>NUEVA ZELANDA</p>
+                    </div>
+                    <h3 class="name">Liam <span>Lawson</span></h3>
+                    <h4 class="team">RACING BULLS</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>30</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/liamlawson.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--ARVID LINDBLAD-->
+            <div class="driver racingbulls" data-ergast-id="arvid_lindblad">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/british.webp" alt="">
+                        <p>GRAN BRETAÑA</p>
+                    </div>
+                    <h3 class="name">Arvid <span>Lindblad</span></h3>
+                    <h4 class="team">RACING BULLS</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>41</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/arvidlindblad.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--ASTON MARTIN-->
+            <!--LANCE STROLL-->
+            <div class="driver astonmartin" data-ergast-id="stroll">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/canadian.webp" alt="">
+                        <p>CANADÁ</p>
+                    </div>
+                    <h3 class="name">Lance <span>Stroll</span></h3>
+                    <h4 class="team">ASTON MARTIN</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>18</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/lancestroll.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--FERNANDO ALONSO--> 
+            <div class="driver astonmartin" data-ergast-id="alonso">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/spanish.webp" alt="">
+                        <p>ESPAÑA</p>
+                    </div>
+                    <h3 class="name">Fernando <span>Alonso</span></h3>
+                    <h4 class="team">ASTON MARTIN</h4>
+                    <div class="championships">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffb900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path><path d="M5 21h14"></path></svg>
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>14</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/fernandoalonso.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--AUDI-->
+            <!--NICO HULKENBERG-->
+            <div class="driver audi" data-ergast-id="hulkenberg">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/german.webp" alt="">
+                        <p>ALEMANIA</p>
+                    </div>
+                    <h3 class="name">Nico <span>Hülkenberg</span></h3>
+                    <h4 class="team">AUDI</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>27</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/nicohulkenberg.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--GABRIEL BORTOLETO-->
+            <div class="driver audi" data-ergast-id="bortoleto">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/brazilian.webp" alt="">
+                        <p>BRASIL</p>
+                    </div>
+                    <h3 class="name">Gabriel <span>Bortoleto</span></h3>
+                    <h4 class="team">AUDI</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>5</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/gabrielbortoleto.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--HAAS-->
+            <!--OLIVER BEARMAN-->
+            <div class="driver haas" data-ergast-id="bearman">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/british.webp" alt="">
+                        <p>GRAN BRETAÑA</p>
+                    </div>
+                    <h3 class="name">Oliver <span>Bearman</span></h3>
+                    <h4 class="team">HAAS</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>87</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/oliverbearman.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--ESTEBAN OCON-->
+            <div class="driver haas" data-ergast-id="ocon">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/french.webp" alt="">
+                        <p>FRANCIA</p>
+                    </div>
+                    <h3 class="name">Esteban <span>Ocon</span></h3>
+                    <h4 class="team">HAAS</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>31</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/estebanocon.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <!--ALPINE-->
+            <!--PIERRE GASLY-->
+            <div class="driver alpine" data-ergast-id="gasly">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/french.webp" alt="">
+                        <p>FRANCIA</p>
+                    </div>
+                    <h3 class="name">Pierre <span>Gasly</span></h3>
+                    <h4 class="team">ALPINE</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>10</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/pierregasly.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--FRANCO COLAPINTO-->
+            <div class="driver alpine" data-ergast-id="colapinto">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/argentine.webp" alt="">
+                        <p>ARGENTINA</p>
+                    </div>
+                    <h3 class="name">Franco <span>Colapinto</span></h3>
+                    <h4 class="team">ALPINE</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>43</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="img/pilotos/francocolapinto.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--CADILLAC-->
+            <!--CHECO PEREZ-->
+            <div class="driver cadillac" data-ergast-id="perez">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/mexico.webp" alt="">
+                        <p>MEXICO</p>
+                    </div>
+                    <h3 class="name">Sergio <span>Pérez</span></h3>
+                    <h4 class="team">CADILLAC</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>11</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--VALTTERI BOTTAS-->
+            <div class="driver cadillac" data-ergast-id="bottas">
+                <div class="driver_info">
+                    <div class="nationality">
+                        <img src="img/rounded-flags/finland.webp" alt="">
+                        <p>FINLANDIA</p>
+                    </div>
+                    <h3 class="name">Valtteri <span>Bottas</span></h3>
+                    <h4 class="team">CADILLAC</h4>
+                </div>
+                <div class="driver_media">
+                    <div class="number">
+                        <p>77</p>
+                    </div>
+                    <div class="driver_image">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</main>
+
+<section class="secondsection_wrapper">
+    <div class="secondsection_container">
+        <div class="items_container">
+            <div class="item">
+                <h3>22</h3>
+                <h4>PILOTOS</h4>
+            </div>
+            <div class="item">
+                <h3>11</h3>
+                <h4>ESCUDERÍAS</h4>
+            </div>
+            <div class="item">
+                <h3>14</h3>
+                <h4>NACIONALIDADES</h4>
+            </div>
+            <div class="item">
+                <h3>14</h3>
+                <h4>TÍTULOS MUNDIALES</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--FOOTER-->
+<footer>
+    <div class="footer_container">
+        <div class="footer_info">
+            <div class="footer_logo">
+                <img src="img/index/logo.webp" alt="Logo Telemetrico">
+                <p>La plataforma de F1 independiente definitiva. Análisis basado en datos, comunidad apasionada y las noticias más rápidas de la parrilla.</p>
+                
+                <div class="footersocial">
+                    <ul>
+                        <li><a href=""><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-5 h-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music2 lucide-music-2 w-5 h-5" aria-hidden="true"><circle cx="8" cy="18" r="4"></circle><path d="M12 18V2l7 4"></path></svg></a></li>
+                    </ul>
+                </div>
+                <span>🚀 Desarrollado por <a href="">Rosario García de Andina</a></span>
+            </div>
+            <div class="footer_links">
+                <h4>PLATAFORMA</h4>
+                <ul>
+                    <li><a href="miopinion.html">Opiniones</a></li>
+                    <li><a href="transmisiones.html">Centro de Videos</a></li>
+                    <li><a href="calendario.html">Calendario de Carreras</a></li>
+                    <li><a href="pilotos.html">Pilotos</a></li>
+                    <li><a href="escuderias.html">Escuderias</a></li>
+                    <li><a href="guia.html">Análisis Técnico</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_rights">
+            <div class="copy">
+                <p>© 2025 Telemetrico F1. Todos los derechos reservados. Medios F1 No Oficiales.</p>
+            </div>
+            <div class="copy_links">
+                <ul>
+                    <li><a href="">Política de Privacidad</a></li>
+                    <li><a href="">Términos de Servicio</a></li>
+                    <li><a href="">Configuración de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- DRIVER POPUP -->
+<div class="driver-modal" id="driverModal" aria-hidden="true">
+    <div class="driver-modal__overlay" data-close="true"></div>
+
+    <div class="driver-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="dmName">
+        <div class="modal_title">
+            <div class="driver_name_cont">
+                <p id="driver_name"></p>
+                <span id="driver_team"></span>
+            </div>
+            <button class="driver-modal__close" type="button" aria-label="Cerrar" data-close="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true" focusable="false"><path d="M6 6L18 18M18 6L6 18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+        
+        <div class="driver_data_container">
+            <div class="driver_data">
+                <p class="data_number">NÚMERO</p>
+                <span id="driver_number"></span>
+            </div>
+            <div class="driver_data">
+                <p class="data_age">EDAD</p>
+                <span id="driver_age"></span>
+            </div>
+            <div class="driver_data">
+                <p class="data_position">POSICIÓN</p>
+                <span id="driver_position"></span>
+            </div>
+            <div class="driver_data">
+                <p class="data_points">PUNTOS</p>
+                <span id="driver_points"></span>
+            </div>
+        </div>
+
+        <div class="driver_nationality_date">
+            <div class="driver_nationality">
+                <h3>NACIONALIDAD</h3>
+                <div>
+                    <img src="" alt="" id="driver_flag">
+                    <p id="driver_nationality"></p>
+                </div>
+            </div>
+            <div class="driver_birth">
+                <h3>FECHA DE NACIMIENTO</h3>
+                <p id="driver_birth"></p>
+            </div>
+        </div>
+
+        <div class="driver_stats_container">
+            <h4>ESTADÍSTICAS EN F1</h4>
+            <div class="driver_stats">
+                <div class="driver_stat wins">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fdc700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy w-6 h-6 text-yellow-400" aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                    <p>VICTORIAS</p>
+                    <span id="driver_wins"></span>
+                </div>
+                <div class="driver_stat podiums">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff8904" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award w-6 h-6 text-orange-400" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>                    
+                    <p>PODIOS</p>
+                    <span id="driver_podiums"></span>
+                </div>
+                <div class="driver_stat poles">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d3f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap w-6 h-6 text-cyan-400" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>                    
+                    <p>POLES</p>
+                    <span id="driver_poles"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/f1-api-cache.js"></script>
+<script src="js/pilotos.js"></script>
+<script src="js/header-footer.js"></script>
+</body>
+</html>
