@@ -1,0 +1,81 @@
+:root {
+    --title-font: "Chakra Petch", system-ui, sans-serif;
+    --text-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --subtitle-font: "Rajdhani", system-ui, sans-serif;
+    --red-color: #cc0000;
+    --text-color: #94a3b8;
+    --white-color: #fff;
+    --grey-color: #96999d;
+    --border-radius: 8px;
+    --padding-top: 60px;
+    --padding-bottom: 60px;
+    --border-grey: 1px solid #FFFFFF1A;
+    --redbg-hover: #bf0000;
+    --red-gradient: linear-gradient(to right, var(--red-color) 0%, rgba(255, 0, 59, 0.6) 100%);
+    --dark-bg: #0a0d12;
+}
+
+/* AFTER TITLES GRADIENT ADD
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+*/
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{ height:100%; }
+
+body{
+    background-color: var(--dark-bg);
+    overflow-x: hidden;
+}
+
+.main_container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.main_title{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: var(--padding-bottom);
+}
+
+.main_title h1{
+    color: var(--white-color);
+    font-size: 96px;
+    font-family: var(--title-font);
+    font-style: italic;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+.main_title h1 span{
+    background: var(--red-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.main_title h2{
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.main_title h2 span{
+    font-weight: 400;
+}

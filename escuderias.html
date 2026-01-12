@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/escuderias.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <title>Telemetrico</title>
+</head>
+<body>
+<!--HEADER-->
+<header>
+    <div class="header_container">
+        <div class="header_logo">
+            <a href="index.html"><img src="img/index/logo.webp" alt="Logo Telemetrico"></a>
+        </div>
+
+        <div class="header_navigation">
+            <button class="hamburger" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="menu-wrapper">
+                <ul class="menu-wrapper-list">
+                    <li><a href="miopinion.html">MI OPINIÓN</a></li>
+                    <li><a href="transmisiones.html">TRANSMISIONES</a></li>
+                    <li class="has-submenu">
+                        <a href="#" class="submenu-toggle">CAMPEONATO</a>
+                        <ul class="submenu">
+                        <li><a href="pilotos.html">PILOTOS</a></li>
+                        <li><a href="escuderias.html">ESCUDERÍAS</a></li>
+                        <li><a href="calendario.html">CALENDARIO</a></li>
+                        <li><a href="posiciones.html">POSICIONES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="guia.html">GUIA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div class="main_container">
+        <div class="main_title">
+            <h1><span>Escuderias</span></h1>
+            <h2>Conocé todos los equipos que compiten en el Campeonato Mundial de Fórmula 1 2026.</h2>
+        </div>
+
+        <!--ESCUDERIAS-->
+        <div class="teams">
+            <!--MCLAREN-->
+            <div class="team mclaren">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="mclaren_color">MCLAREN</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>1963</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Woking, Reino Unido</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="mclaren_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Campeones vigentes. Norris y Piastri buscan repetir la gloria de Woking.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Lando NORRIS</h3>
+                                    <img src="img/rounded-flags/british.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff8904" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="mclaren_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Oscar PIASTRI</h3>
+                                    <img src="img/rounded-flags/australian.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff8904" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="mclaren_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MERCEDES-->
+            <div class="team mercedes">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="mercedes_color">MERCEDES</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>1954</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Brackley, Reino Unido</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="mercedes_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Antonelli consolida su lugar junto a Russell. Las flechas plateadas van por todo.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>George RUSSELL</h3>
+                                    <img src="img/rounded-flags/british.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d3f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="mercedes_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Kimi ANTONELLI</h3>
+                                    <img src="img/rounded-flags/italian.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00d3f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="mercedes_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--FERRARI-->
+            <div class="team ferrari">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="ferrari_color">FERRARI</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>1950</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Maranello, Italia</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="ferrari_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Hamilton y Leclerc. Maranello tiene el dream team para conquistar el título.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Charles LECLERC</h3>
+                                    <img src="img/rounded-flags/monegasque.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="ferrari_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Lewis HAMILTON</h3>
+                                    <img src="img/rounded-flags/british.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="ferrari_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--RED BULL-->
+            <div class="team redbull">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="redbull_color">RED BULL</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>2005</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Milton Keynes, Reino Unido</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="redbull_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Verstappen lidera con Hadjar a su lado. Milton Keynes busca recuperar la corona.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Max VERSTAPPEN</h3>
+                                    <img src="img/rounded-flags/dutch.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4781D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="redbull_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Isack HADJAR</h3>
+                                    <img src="img/rounded-flags/french.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4781D7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="redbull_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--WILLIAMS-->
+            <div class="team williams">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="williams_color">WILLIAMS</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>1977</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Grove, Reino Unido</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="williams_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Sainz y Albon lideran el resurgimiento. Grove apunta a los podios en 2026.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Alex ALBON</h3>
+                                    <img src="img/rounded-flags/thai.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1868DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="williams_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Carlos SAINZ</h3>
+                                    <img src="img/rounded-flags/spanish.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1868DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="williams_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--RACING BULLS-->
+            <div class="team racingbulls">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="racingbulls_color">RACING BULLS</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>2024</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Faenza, Italia</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="racingbulls_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Lawson y Lindblad. La cantera de Red Bull toma protagonismo en Faenza.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Liam LAWSON</h3>
+                                    <img src="img/rounded-flags/newzealander.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6C98FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="racingbulls_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Arvid LINDBLAND</h3>
+                                    <img src="img/rounded-flags/british.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6C98FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="racingbulls_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ASTON MARTIN-->
+            <div class="team astonmartin">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="astonmartin_color">ASTON MARTIN</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>2021</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Silverstone, Reino Unido</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="astonmartin_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>El proyecto Newey rinde frutos. Alonso y Stroll van por el ansiado título.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Lance STROLL</h3>
+                                    <img src="img/rounded-flags/canadian.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#05df72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="astonmartin_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Fernando ALONSO</h3>
+                                    <img src="img/rounded-flags/spanish.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#05df72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="astonmartin_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--HAAS-->
+            <div class="team haas">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="haas_color">HAAS</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>2016</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Kannapolis, USA</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="haas_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Bearman y Ocon lideran. El equipo americano busca consolidarse en la zona media.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Esteban OCON</h3>
+                                    <img src="img/rounded-flags/french.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#99a1af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="haas_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Oliver BEARMAN</h3>
+                                    <img src="img/rounded-flags/british.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#99a1af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="haas_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--AUDI-->
+            <div class="team audi">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="audi_color">AUDI</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>2026</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Neuburg, Alemania</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="audi_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>El debut de los cuatro aros. Hülkenberg y Bortoleto escriben historia alemana.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Nico HÜLKENBERG</h3>
+                                    <img src="img/rounded-flags/german.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="audi_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Gabriel BORTOLETO</h3>
+                                    <img src="img/rounded-flags/brazilian.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="audi_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--ALPINE-->
+            <div class="team alpine">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="alpine_color">ALPINE</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>2021</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Enstone, Reino Unido</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="alpine_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>Gasly y Colapinto. La dupla franco-argentina que ilusiona a Enstone.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Pierre GASLY</h3>
+                                    <img src="img/rounded-flags/french.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fb64b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="alpine_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Franco COLAPINTO</h3>
+                                    <img src="img/rounded-flags/argentine.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fb64b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="alpine_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CADILLAC-->
+            <div class="team cadillac">
+                <div class="team_stats">
+                    <div class="team_name">
+                        <h3 class="cadillac_color">CADILLAC</h3>
+                    </div>
+                    <div class="team_info">
+                        <div class="team_year">
+                            <p>FUNDADA</p>
+                            <span>2026</span>
+                        </div>
+                        <div class="team_location">
+                            <p>SEDE</p>
+                            <span>Detroit, USA</span>
+                        </div>
+                        <div class="team_points">
+                            <p>PUNTOS</p>
+                            <span id="team_points" class="cadillac_color"></span>
+                        </div>
+                    </div>
+                    <div class="team_description">
+                        <p>El 11º equipo de la parrilla. Pérez y Bottas traen experiencia al proyecto americano.</p>
+                    </div>
+                </div>
+                <div class="team_drivers_container">
+                    <div class="team_drivers_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                        <p>PILOTOS</p>
+                    </div>
+                    <div class="drivers">
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Checo PÉREZ</h3>
+                                    <img src="img/rounded-flags/mexico.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#99a1af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="cadillac_color"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="driver">
+                            <div class="driver_info">
+                                <div class="driver_name">
+                                    <h3>Vallteri BOTTAS</h3>
+                                    <img src="img/rounded-flags/finland.webp" alt="">
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#99a1af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path><path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path><path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path><path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path></svg>
+                            </div>
+                            <div class="driver_stats">
+                                <div class="driver_position">
+                                    <p>POSICIÓN</p>
+                                    <span id="position"></span>
+                                </div>
+                                <div class="driver_points">
+                                    <p>PUNTOS</p>
+                                    <span id="points" class="cadillac_color"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+<section class="secondsection_wrapper">
+    <div class="secondsection_container">
+        <div class="items_container">
+            <div class="item">
+                <h3>11</h3>
+                <h4>ESCUDERIAS</h4>
+            </div>
+            <div class="item">
+                <h3>75+</h3>
+                <h4>AÑOS DE HISTORIA</h4>
+            </div>
+            <div class="item">
+                <h3>8</h3>
+                <h4>PAÍSES SEDE</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--FOOTER-->
+<footer>
+    <div class="footer_container">
+        <div class="footer_info">
+            <div class="footer_logo">
+                <img src="img/index/logo.webp" alt="Logo Telemetrico">
+                <p>La plataforma de F1 independiente definitiva. Análisis basado en datos, comunidad apasionada y las noticias más rápidas de la parrilla.</p>
+                
+                <div class="footersocial">
+                    <ul>
+                        <li><a href=""><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-5 h-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube w-5 h-5" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-5 h-5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                        <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music2 lucide-music-2 w-5 h-5" aria-hidden="true"><circle cx="8" cy="18" r="4"></circle><path d="M12 18V2l7 4"></path></svg></a></li>
+                    </ul>
+                </div>
+                <span>🚀 Desarrollado por <a href="">Rosario García de Andina</a></span>
+            </div>
+            <div class="footer_links">
+                <h4>PLATAFORMA</h4>
+                <ul>
+                    <li><a href="miopinion.html">Opiniones</a></li>
+                    <li><a href="transmisiones.html">Centro de Videos</a></li>
+                    <li><a href="calendario.html">Calendario de Carreras</a></li>
+                    <li><a href="pilotos.html">Pilotos</a></li>
+                    <li><a href="escuderias.html">Escuderias</a></li>
+                    <li><a href="guia.html">Análisis Técnico</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_rights">
+            <div class="copy">
+                <p>© 2025 Telemetrico F1. Todos los derechos reservados. Medios F1 No Oficiales.</p>
+            </div>
+            <div class="copy_links">
+                <ul>
+                    <li><a href="">Política de Privacidad</a></li>
+                    <li><a href="">Términos de Servicio</a></li>
+                    <li><a href="">Configuración de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/f1-api-cache.js"></script>
+<script src="js/escuderias.js"></script>
+<script src="js/header-footer.js"></script>
+</body>
+</html>
