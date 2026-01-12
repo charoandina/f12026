@@ -253,7 +253,7 @@ async function initMonoplazas3D() {
 
     // Modelo
     loader.load(
-      '../models/f1_2026_release_car.glb',
+      './models/f1_2026_release_car.glb', // Cambiado de '../models/' a './models/'
       (gltf) => {
         const model = gltf.scene;
         
