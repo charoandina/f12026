@@ -1,3 +1,19 @@
+// SCROLL
+  window.addEventListener("load", () => {
+    const target = document.querySelector(".second_wrapper");
+    if (!target) return;
+
+    const headerOffset = 77; // ajustá a tu header
+    const elementPosition = target.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  });
+
+//COUNTDOWN
 const calendarioF1 = [
   { nombre: "GRAN PREMIO DE AUSTRALIA", fecha: "8 de marzo", hora: "12:00 p.m.", circuito: "Albert Park Circuit", distancia: "307.574 km", year: 2026 },
   { nombre: "GRAN PREMIO DE CHINA", fecha: "15 de marzo", hora: "2:00 a.m.", circuito: "Shanghai International Circuit", distancia: "305.066 km", year: 2026 },
