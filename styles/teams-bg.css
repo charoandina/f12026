@@ -1,0 +1,18 @@
+.presentations {
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease;
+  background-repeat: no-repeat;
+}
+
+.mclaren { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/mclaren_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.mercedes { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/mercedes_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.ferrari { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/ferrari_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.redbull { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/redbull_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.williams { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/williams_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.racingbulls { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/racingbulls_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.astonmartin { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/astonmartin_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.audi { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/audi_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.haas { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/haas_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.alpine { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/apline_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }
+.cadillac { background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/escuderia-bg-vertical/cadillac_bg.webp); background-repeat: no-repeat; background-size: cover; background-position: center; }

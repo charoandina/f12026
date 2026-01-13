@@ -390,14 +390,14 @@ footer {
 .footer_logo p,
 .footer_logo span {
   font-family: var(--text-font);
-  color: var(--text-color);
+  color: var(--grey-color);
   font-size: 12px;
   width: 100%;
 }
 
 .footer_logo span a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--grey-color);
 }
 
 .footersocial ul {

@@ -136,7 +136,7 @@ body{
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
-    height: 140px;
+    height: 210px;
 }
 
 .nationality{
@@ -165,6 +165,33 @@ body{
     font-weight: 700;
     font-size: 30px;
     line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.nickname{
+    position: absolute;
+    left: 0px;          /* movelo fino */
+    top: 22px;           /* subilo/bajalo */
+    transform: rotate(-6deg);
+    font-family: "Caveat", cursive;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--red-color);      /* rojo vibrante tipo F1 */
+    letter-spacing: 1px;
+    z-index: 2;
+    pointer-events: none;
+    white-space: nowrap;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.name .surname {
+    position: relative;
+    z-index: 1;
 }
 
 .team{
@@ -320,8 +347,10 @@ body{
   transition: color 0.25s ease;
 }
 
-.name span{
+.lastname{
     text-transform: uppercase;
+    font-size: 40px;
+    font-style: italic;
 }
 
 /* Hover effects */
@@ -329,7 +358,7 @@ body{
   transform: scale(1.01);
 }
 
-.driver:hover .name {
+.driver:hover .lastname {
   color: var(--red-color);
 }
 

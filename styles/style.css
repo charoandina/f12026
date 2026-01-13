@@ -838,12 +838,18 @@ main{
     background-color: #000;
 }
 
-.social_title h4{
+.social_title h4 a{
     font-family: var(--title-font);
     color: var(--white-color);
     font-size: 30px;
     font-weight: 700px;
     line-height: 1.2;
+    text-decoration: none;
+    transition: 0.5s all ease;
+}
+
+.social_title h4 a:hover{
+    color: var(--red-color);    
 }
 
 .social_titles button{
@@ -867,3 +873,310 @@ main{
     background-color: var(--redbg-hover);
 }
 
+/* PRESENTACIONES */
+
+.presentation_wrapper{
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    background-color: #0a0d12;
+}
+
+.presentation_container{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.presentation_title{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.presentation_title svg{
+    width: 32px;
+    height: 32px;
+}
+
+.presentation_title h2{
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-style: italic;
+    color: var(--white-color);
+    font-size: 48px;
+    line-height: 1;
+}
+
+.presentation_title h2 span{
+    background: linear-gradient(to right, var(--red-color) 0%, rgba(255, 0, 59, 0.6) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.presentations{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border: var(--border-grey);
+    border-radius: var(--border-radius);
+}
+
+.teams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.team{
+    padding: 8px 16px;
+    width: fit-content;
+    border: var(--border-grey);
+    cursor: pointer;
+    background-color: #0000007a;
+    transition: .5s all ease;
+}
+
+.team:hover{
+    background-color: var(--dark-bg);
+}
+
+.team:hover p{
+    color: var(--red-color);
+}
+
+.br-left{
+    border-radius: 8px 0 0 0;
+}
+
+.br-right{
+    border-radius: 0 8px 0 0;
+}
+
+.presentation_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 48px;
+    height: 420px;
+}
+
+.presentation_data{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+    width: 100%;
+    border-right: var(--border-grey);
+}
+
+.presentation_data h3{
+    font-family: var(--title-font);
+    color: var(--white-color);
+    font-size: 74px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.presentation_data h4{
+    font-family: var(--title-font);
+    color: var(--red-color);
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.presentation_img{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.presentation_img h3{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin: auto;
+}
+
+.presentation_img div{
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    width: 100%;
+    justify-content: center;
+}
+
+.presentation_img div p{
+    font-size: 72px;
+    font-family: var(--subtitle-font);
+    color: var(--white-color);
+    line-height: 0.8;
+    font-weight: 700;
+}
+
+.presentation_img div span{
+    color: var(--red-color);
+    font-family: var(--title-font);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.presentations{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border: var(--border-grey);
+    border-radius: var(--border-radius);
+}
+
+.teams{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.team{
+    padding: 8px 16px;
+    width: fit-content;
+    border: var(--border-grey);
+    cursor: pointer;
+    background-color: #0000007a;
+    transition: .5s all ease;
+}
+
+.team:hover{
+    background-color: var(--dark-bg);
+}
+
+.team:hover p{
+    color: var(--red-color);
+}
+
+.br-left{
+    border-radius: 8px 0 0 0;
+}
+
+.br-right{
+    border-radius: 0 8px 0 0;
+}
+
+.team p{
+    font-family: var(--title-font);
+    color: var(--white-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s all ease;
+}
+
+.presentation_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 48px;
+}
+
+.presentation_data{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-start;
+    width: 100%;
+    border-right: var(--border-grey);
+}
+
+.presentation_data h3{
+    font-family: var(--title-font);
+    color: var(--white-color);
+    font-size: 74px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.presentation_data h4{
+    font-family: var(--title-font);
+    color: var(--red-color);
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.presentation_img{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.presentation_img h3{
+    font-family: var(--text-font);
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    margin: auto;
+}
+
+.presentation_img div{
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    width: 100%;
+    justify-content: center;
+}
+
+.presentation_img div p{
+    font-size: 72px;
+    font-family: var(--subtitle-font);
+    color: var(--white-color);
+    line-height: 0.8;
+    font-weight: 700;
+}
+
+.presentation_img div span{
+    color: var(--red-color);
+    font-family: var(--title-font);
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.team.active{
+  background-color: var(--dark-bg);
+}
+
+.team.active p{
+  color: var(--red-color);
+}
