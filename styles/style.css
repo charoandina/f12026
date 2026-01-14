@@ -49,6 +49,8 @@ main{
     display: flex;
     flex-direction: column;
     padding-top: var(--padding-top);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .main_text{
@@ -387,6 +389,17 @@ main{
     color: var(--white-color);
 }
 
+.nextrace_feature img{
+    width: 15px;
+    height: 15px;
+}
+
+.nextrace_feature div{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
 .red{
     color: var(--red-color) !important;
 }
@@ -625,6 +638,7 @@ main{
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .third_title h2{
@@ -634,7 +648,6 @@ main{
     color: var(--white-color);
     font-size: 48px;
     line-height: 1;
-    margin-bottom: 40px;
 }
 
 .third_title h2 span{
@@ -838,6 +851,19 @@ main{
     background-color: #000;
 }
 
+
+.linkedin{
+    background-color: #0A66C2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin svg{
+    width: 24px;
+    height: 24px;
+}
+
 .social_title h4 a{
     font-family: var(--title-font);
     color: var(--white-color);
@@ -929,24 +955,6 @@ main{
     justify-content: center;
     background-color: #000;
     border: var(--border-grey);
-    border-radius: var(--border-radius);
-}
-
-.teams{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border-radius: 12px 12px 0 0;
-}
-
-.team{
-    padding: 8px 16px;
-    width: fit-content;
-    border: var(--border-grey);
-    cursor: pointer;
-    background-color: #0000007a;
-    transition: .5s all ease;
 }
 
 .team:hover{
@@ -955,14 +963,6 @@ main{
 
 .team:hover p{
     color: var(--red-color);
-}
-
-.br-left{
-    border-radius: 8px 0 0 0;
-}
-
-.br-right{
-    border-radius: 0 8px 0 0;
 }
 
 .presentation_info{
@@ -1051,15 +1051,14 @@ main{
     justify-content: center;
     background-color: #000;
     border: var(--border-grey);
-    border-radius: var(--border-radius);
 }
 
 .teams{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    border-radius: 12px 12px 0 0;
 }
 
 .team{
@@ -1079,14 +1078,6 @@ main{
     color: var(--red-color);
 }
 
-.br-left{
-    border-radius: 8px 0 0 0;
-}
-
-.br-right{
-    border-radius: 0 8px 0 0;
-}
-
 .team p{
     font-family: var(--title-font);
     color: var(--white-color);
@@ -1096,22 +1087,6 @@ main{
     transition: .5s all ease;
 }
 
-.presentation_info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 48px;
-}
-
-.presentation_data{
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    align-items: flex-start;
-    width: 100%;
-    border-right: var(--border-grey);
-}
 
 .presentation_data h3{
     font-family: var(--title-font);
@@ -1129,14 +1104,6 @@ main{
     text-transform: uppercase;
     font-weight: 700;
     font-style: italic;
-}
-
-.presentation_img{
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    align-items: flex-end;
-    width: 100%;
 }
 
 .presentation_img h3{
@@ -1179,4 +1146,152 @@ main{
 
 .team.active p{
   color: var(--red-color);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .main_text h1{
+        width: 80%;
+    }
+    .main_text h2{
+        width: 65%;
+    }
+    .main_buttons{
+        padding-left: 5px;
+    }
+    .second_container,.third_container, .presentation_container, .first_container, .fifth_container{
+        width: 90%;
+    }
+    .last_post{
+        height: auto;
+        flex-direction: column;
+    }
+    .last_post_img img{
+        border-radius: 12px 12px 0 0;
+    }
+    .last_post_info{
+        max-width: 100%;
+        padding: 24px;
+    }
+    .third_title h2, .presentation_title h2{
+        font-size: 36px;
+    }
+    .third_title{
+        margin-bottom: 20px;
+    }
+    .last_opinion{
+        max-width: 220px;
+    }
+    .last_opinion h3{
+        font-size: 18px;
+    }
+    .presentation_title svg{
+        width: 24px;
+        height: 24px;
+    }
+    .presentation_data h3{
+        font-size: 60px;
+    }
+    .presentation_data h4{
+        font-size: 28px;
+    }
+    .race_title h3, .copy_links ul li{
+        text-align: center;
+    }
+    .nextrace_feature{
+        max-width: 205px;
+    }
+    .nextrace_feature span{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main_text h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .main_text h2{
+        width: 79%;
+        font-size: 18px;
+    }
+    .main_buttons {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .last_post_textbox h2{
+        font-size: 36px;
+    }
+    .lastopinions_container{
+        flex-direction: column;
+        gap: 36px;
+    }
+    .last_opinion{
+        max-width: 100%;
+    }
+    .third_title button{
+        text-align: right;
+    }
+    .third_title button a{
+        font-size: 14px;
+    }
+    .third_title h2, .presentation_title h2 {
+        font-size: 30px;
+    }
+    .presentation_title h2{
+        width: 80%;
+    }
+    .teams{
+        justify-content: center;
+    }
+    .presentation_info{
+        flex-direction: column;
+    }
+    .presentation_data{
+        border: none;
+        align-items: center;
+    }
+    .race_title h3{
+        font-size: 48px;
+    }
+    .counter{
+        gap: 15px;
+    }
+    .nextrace_features {
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .social_title{
+        gap: 8px;
+    }
+    .social_icon{
+        width: 30px;
+        height: 30px;
+    }
+    .social_icon svg{
+        width: 15px;
+        height: 15px;
+    }
+    .social_title h4 a{
+        font-size: 24px;
+    }
+    .social_titles button a{
+        font-size: 14px;
+    }
+    .socialmedia_media{
+        padding-top: 20px;
+    }
+    .counter_item{
+        max-width: 80px;
+    }
+    .number_box{
+        font-size: 24px;
+    }
+    .first_container{
+        gap: 30px;
+    }
 }

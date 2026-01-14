@@ -146,7 +146,7 @@ function actualizarElementos(carrera, dias, horas, minutos) {
   // Actualizar hora de salida
   const nextRaceTime = document.getElementById('nextrace_time');
   if (nextRaceTime) {
-    nextRaceTime.textContent = `${carrera.hora} (ARG)`;
+    nextRaceTime.textContent = `${carrera.hora}`;
   }
   
   // Actualizar distancia

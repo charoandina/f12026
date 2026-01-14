@@ -461,3 +461,71 @@ body{
 .last_opinion:hover h3 {
     color: var(--red-color);
 }
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+    .main_title h1{
+        width: 80%;
+        font-size: 64px;
+    }
+    .main_title{
+        margin: auto;
+        align-items: center;
+    }
+    .main_title div h3 {
+        font-size: 20px;
+    }
+    .second_container,.third_container, .presentation_container, .first_container, .fifth_container, .main_title{
+        width: 90%;
+    }
+    .last_post{
+        height: auto;
+        flex-direction: column;
+    }
+    .last_post_img img{
+        border-radius: 12px 12px 0 0;
+    }
+    .last_post_info{
+        max-width: 100%;
+        padding: 24px;
+    }
+    .last_opinion{
+        max-width: 220px;
+    }
+    .last_opinion h3{
+        font-size: 18px;
+    }
+    .last_opinion img{
+        max-width: 100%;
+        height: 280px;
+    }
+    .third_title h2{
+        font-size: 30px;
+    }
+    .third_wrapper{
+        padding-top: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main_title h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .main_title div{
+        display: none;
+    }
+    .last_post_textbox h2{
+        font-size: 36px;
+    }
+    .lastopinions_container{
+        flex-direction: column;
+        gap: 36px;
+    }
+    .last_opinion{
+        max-width: 100%;
+    }
+
+}

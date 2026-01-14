@@ -108,6 +108,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 24px;
 }
@@ -429,4 +430,47 @@ body{
 
 .hidden{
     display: none;
+}
+
+@media (max-width: 1024px) {
+    .main_title h1{
+        font-size: 64px;
+        margin-right: auto;
+    }
+    .main_title{
+        margin: auto;
+        align-items: center;
+    }
+    .main_container{
+        width: 90%;
+    }
+    .raceinfo_container {
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .racestats {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .racestat{
+        gap: 6px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main_title h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .racestatus_container{
+        margin-left: auto;
+    }
+    .items_container{
+        flex-direction: column;
+    }
+    .items_container{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

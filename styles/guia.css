@@ -504,7 +504,7 @@ body{
 #monoplazas-content {
     width: 100%;
     min-height: 600px;
-    height: 600px;
+    height: 100%;
     position: relative;
 }
 
@@ -548,4 +548,53 @@ body{
   white-space: nowrap;
   z-index: 20;
   font-family: 'Rajdhani', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .main_title h1{
+        font-size: 64px;
+        margin-right: auto;
+    }
+    .main_title{
+        margin: auto;
+        align-items: center;
+    }
+    .main_container, .guia_container{
+        width: 90%;
+    }
+    .main_title h2{
+        font-size: 16px;
+        margin-right: auto;
+    }
+    .flag, .neumatico{
+        max-width: 300px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main_title h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .items_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .car_container {
+        min-height: 250px;
+    }
+    
+    #monoplazas-content {
+        min-height: 250px !important;
+        height: 250px !important;
+    }
+    
+    #monoplazas-content canvas {
+        height: 250px !important;
+    }
+        .hotspot {
+        font-size: 10px !important;
+        padding: 2px 5px;
+    }
 }

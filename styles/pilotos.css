@@ -538,6 +538,7 @@ body{
     gap: 10px;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .driver_data{
@@ -780,4 +781,56 @@ body{
     color: var(--white-color);
     font-size: 30px;
     font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .main_title h1{
+        font-size: 64px;
+        margin-right: auto;
+    }
+    .main_title{
+        margin: auto;
+        align-items: center;
+    }
+    .main_container{
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main_title h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .lastname{
+        font-size: 30px;
+    }
+    .driver_image{
+        padding-right: 10px;
+    }
+    .nickname{
+        font-size: 28px;
+    }
+    .items_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .driver_data_container{
+        justify-content: center;
+        gap: 20px;
+    }
+    .driver_nationality_date{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+    .driver-modal__dialog {
+        width: 90%;
+        height: 90%;
+        overflow-y: auto;
+    }
+    .driver_stats{
+        flex-direction: column;
+    }
 }

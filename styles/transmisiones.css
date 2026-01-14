@@ -441,3 +441,59 @@ body{
         transition:none !important;
   }
 }
+
+@media (max-width: 1024px) {
+    .main_title h1{
+        font-size: 64px;
+        margin-right: auto;
+    }
+    .main_title{
+        margin: auto;
+        align-items: center;
+    }
+    .main_container, .playlist_container{
+        width: 90%;
+    }
+    .adrian_info{
+        max-width: 100%;
+    }
+    .mainvideo_container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .highlited_title{
+        font-size: 30px;
+    }
+    .animation_section {
+        min-height: 55vh;
+    }
+    .line{
+        font-size: 80px;
+    }
+    .headline{
+        height: 220px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main_title h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .line{
+        font-size: 60px;
+    }
+    .headline{
+        height: 230px;
+    }
+    .playlisticon_title h4{
+        font-size: 22px;
+    }
+    .playlisticon_title {
+        flex-direction: row-reverse;
+    }
+    .playlist_titles button{
+        width: 102px;
+    }
+}

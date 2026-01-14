@@ -1,0 +1,17 @@
+# Activar el módulo de reescritura
+RewriteEngine On
+
+# Redirigir URLs con .html a URLs sin extensión (301 permanente)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{THE_REQUEST} ^GET\ /[^?\s]+\.html
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Permitir acceso a archivos sin extensión agregando .html internamente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Configuraciones adicionales opcionales
+Options -Indexes
+DirectoryIndex index.html

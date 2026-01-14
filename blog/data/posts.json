@@ -1,5 +1,14 @@
 [
   {
+    "id": "se-vienen-las-presentaciones",
+    "titulo": "SE VIENEN LAS PRESENTACIONES",
+    "fecha": "14-01-2026",
+    "fechaTexto": "14 de enero, 2026",
+    "autor": "Adrián Puente",
+    "imagen": "img/blog/se-vienen-las-presentaciones.webp",
+    "excerpt": "Suceden cosas insólitas. El año ya empezó. Y ya está vigente la competencia inicial. Las escuderías imponen un primer desafío, evadir una presentación formal de un auto. Se ponen fechas."
+  },
+  {
     "id": "norris-campeon-del-mundo",
     "titulo": "NORRIS CAMPEON DEL MUNDO",
     "fecha": "09-12-2025",

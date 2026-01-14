@@ -415,8 +415,8 @@ footer {
 }
 
 .footersocial ul li a svg {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 .footersocial ul li a svg:hover {
@@ -487,4 +487,39 @@ footer {
   font-family: var(--text-font);
   font-size: 14px;
   transition: all 0.5s ease;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1024px) {
+  .footer_logo img{
+      width: 50%;
+  }
+  .footer_logo{
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer_info {
+      align-items: flex-end !important;
+      padding-bottom: 16px;
+      flex-direction: column-reverse;
+      gap: 24px;
+  }
+  .footer_logo img{
+      width: 50%;
+  }
+  .footer_rights{
+      flex-direction: column-reverse;
+      gap: 24px;
+  }
+  .copy p{
+      text-align: center;
+      font-size: 10px;
+  }
+  .copy_links ul li a{
+    font-size: 12px;
+  }
 }

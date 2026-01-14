@@ -223,8 +223,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 16px;
+    align-items: stretch;
 }
 
 .driver{
@@ -486,4 +486,59 @@ body{
     font-family: var(--text-font);
     font-size: 16px;
     font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .main_title h1{
+        font-size: 64px;
+        margin-right: auto;
+    }
+    .main_title{
+        margin: auto;
+        align-items: center;
+    }
+    .main_container{
+        width: 90%;
+    }
+    .team_stats{
+        width: 60%;
+    }
+    .driver_stats{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .driver_points{
+        align-items: flex-start;
+    }
+    .team_name h3{
+        font-size: 30px;
+    }
+    .driver_name h3{
+        width: 90%;
+    }
+    .team_year span, .team_location span {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main_title h1{
+        font-size: 50px;
+        line-height: 1.2;
+    }
+    .team{
+        flex-direction: column;
+        padding: 24px;
+    }
+    .driver_name h3{
+        font-size: 16px;
+    }
+    .driver_position p, .driver_points p {
+        font-size: 14px;
+    }
+    .items_container{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
