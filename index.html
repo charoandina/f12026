@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!--CSS-->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header-footer.css">
-    <link rel="stylesheet" href="styles/teams-bg.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/header-footer.css">
+    <link rel="stylesheet" href="/styles/teams-bg.css">
     
     <title>Telemetrico</title>
 </head>
@@ -21,7 +21,7 @@
     <header>
         <div class="header_container">
             <div class="header_logo">
-                <a href="index.html"><img src="img/index/logo.webp" alt="Logo Telemetrico"></a>
+                <a href="index"><img src="img/index/logo.webp" alt="Logo Telemetrico"></a>
             </div>
 
             <div class="header_navigation">
@@ -31,18 +31,18 @@
 
                 <nav class="menu-wrapper">
                     <ul class="menu-wrapper-list">
-                        <li><a href="miopinion.html">MI OPINIÓN</a></li>
-                        <li><a href="transmisiones.html">TRANSMISIONES</a></li>
+                        <li><a href="miopinion">MI OPINIÓN</a></li>
+                        <li><a href="transmisiones">TRANSMISIONES</a></li>
                         <li class="has-submenu">
                             <a href="#" class="submenu-toggle">CAMPEONATO</a>
                             <ul class="submenu">
-                            <li><a href="pilotos.html">PILOTOS</a></li>
-                            <li><a href="escuderias.html">ESCUDERÍAS</a></li>
-                            <li><a href="calendario.html">CALENDARIO</a></li>
-                            <li><a href="posiciones.html" style="display: none;">POSICIONES</a></li>
+                            <li><a href="pilotos">PILOTOS</a></li>
+                            <li><a href="escuderias">ESCUDERÍAS</a></li>
+                            <li><a href="calendario">CALENDARIO</a></li>
+                            <li><a href="posiciones" style="display: none;">POSICIONES</a></li>
                             </ul>
                         </li>
-                        <li><a href="guia.html">GUÍA</a></li>
+                        <li><a href="guia">GUÍA</a></li>
                     </ul>
                 </nav>
             </div>
@@ -55,19 +55,25 @@
             <div class="main_text">
                 <h1>Tecnología <br>Precisión <br>Velocidad</h1>
                 <h2>La plataforma definitiva de inteligencia automóvil. Análisis de telemetría profunda, información de estrategia de carrera en vivo y cobertura premium del paddock.</h2>
-                <div class="main_buttons">
+                <div class="main_buttons" id="normal-buttons">
                     <div class="main_button">
-                        <a href="transmisiones.html">
+                        <a href="transmisiones">
                             <p>TRANSMISIONES</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                         </a>
                     </div>
                     <div class="main_button">
-                        <a href="guia.html">
+                        <a href="guia">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path></svg>                      
                             <p>GUIA</p>
                         </a>
                     </div>
+                </div>
+                <div class="live_button">
+                    <a id="cta-live-yt" href="#" target="_blank" class="btn-live" style="display: none;">
+                        <span class="live-dot" aria-hidden="true"></span>
+                        <p>EN VIVO EN YOUTUBE</p>
+                    </a>
                 </div>
             </div>
             <div class="sistem_container">
@@ -83,7 +89,7 @@
     <div class="second_container">
         <div class="last_post">
             <div class="last_post_img">
-                <img src="img/blog/norris-campeon-del-mundo.webp" alt="Imagen blog" id="last_img_post">
+                <img src="/img/blog/norris-campeon-del-mundo.webp" alt="Imagen blog" id="last_img_post">
             </div>
             <div class="last_post_info">
                 <div class="last_post_banners">
@@ -126,7 +132,7 @@
     <div class="third_container">
         <div class="third_title">
             <h2>ÚLTIMAS <span>OPINIONES</span></h2>
-            <button><a href="miopinion.html">VER TODAS LAS OPINIONES</a></button>
+            <button><a href="miopinion">VER TODAS LAS OPINIONES</a></button>
         </div>
         <div class="lastopinions_container">
             <div class="lastopinions_container" id="homeLastOpinions">
@@ -247,7 +253,7 @@
                 <p>CARRERA</p>
                 <div>
                     <span class="red" id="nextrace_time"></span>
-                    <img src="img/rounded-flags/argentine.webp" alt="">
+                    <img src="/img/rounded-flags/argentine.webp" alt="">
                 </div>
             </div>
             <div class="nextrace_feature">
@@ -331,7 +337,7 @@
     <div class="footer_container">
         <div class="footer_info">
             <div class="footer_logo">
-                <img src="img/index/logo.webp" alt="Logo Telemetrico">
+                <img src="/img/index/logo.webp" alt="Logo Telemetrico">
                 <p>Plataforma especializada en Fórmula 1® <br>
                 Proceso y análisis de la información de F1® por Adrián Puente. <br>
                 Interpretar las carreras. Entender las noticias, para comprender la competencia.
@@ -353,12 +359,12 @@
             <div class="footer_links">
                 <h4>PLATAFORMA</h4>
                 <ul>
-                    <li><a href="miopinion.html">Mi Opinión</a></li>
-                    <li><a href="transmisiones.html">Desde Boxes</a></li>
-                    <li><a href="calendario.html">Calendario de Carreras</a></li>
-                    <li><a href="pilotos.html">Pilotos</a></li>
-                    <li><a href="escuderias.html">Escuderias</a></li>
-                    <li><a href="guia.html">Análisis Técnico</a></li>
+                    <li><a href="miopinion">Mi Opinión</a></li>
+                    <li><a href="transmisiones">Desde Boxes</a></li>
+                    <li><a href="calendario">Calendario de Carreras</a></li>
+                    <li><a href="pilotos">Pilotos</a></li>
+                    <li><a href="escuderias">Escuderias</a></li>
+                    <li><a href="guia">Análisis Técnico</a></li>
                 </ul>
             </div>
         </div>
@@ -366,7 +372,7 @@
             <div class="copy">
                 <p>© 2026 Telemétrico® Todos los derechos reservados. Medios F1® No Oficiales.</p>
             </div>
-            <div class="copy_links">
+            <div class="copy_links" style="display: none;">
                 <ul>
                     <li><a href="">Política de Privacidad</a></li>
                     <li><a href="">Términos de Servicio</a></li>
@@ -377,9 +383,10 @@
     </div>
 </footer>
 
-<script src="js/presentation.js"></script>
-<script src="js/index.js"></script>
-<script src="js/index-posts.js"></script>
-<script src="js/header-footer.js"></script>
+<script src="/js/live-detector.js"></script>
+<script src="/js/presentation.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/index-posts.js"></script>
+<script src="/js/header-footer.js"></script>
 </body>
 </html>

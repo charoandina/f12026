@@ -1,5 +1,14 @@
 [
   {
+    "id": "este-es-el-redbull-rb22",
+    "titulo": "ESTE ES EL RED BULL RB22",
+    "fecha": "15-01-2026",
+    "fechaTexto": "15 de enero, 2026",
+    "autor": "Adrián Puente",
+    "imagen": "img/blog/este-es-el-redbull-rb22.webp",
+    "excerpt": "Nació el auto de Red Bull de 2026. El heredero de ocho títulos de pilotos y seis coronas de constructores. Diseño para el cuatro veces campeón del mundo..."
+  },
+  {
     "id": "se-vienen-las-presentaciones",
     "titulo": "SE VIENEN LAS PRESENTACIONES",
     "fecha": "14-01-2026",

@@ -32,7 +32,7 @@ async function initIndexPosts() {
   featuredText.textContent = truncate(featured.excerpt || "", 300);
   featuredAuthor.textContent = `Por ${featured.autor}`;
   featuredDate.textContent = formatFechaTexto(featured.fecha);
-  featuredLink.href = `post.html?id=${encodeURIComponent(featured.id)}`;
+  featuredLink.href = `post?id=${encodeURIComponent(featured.id)}`;
 
   // ===== LAST 3 =====
   const lastThree = posts.slice(1, 4);
@@ -42,7 +42,7 @@ async function initIndexPosts() {
   listContainer.querySelectorAll(".last_opinion").forEach(card => {
     card.addEventListener("click", () => {
       const id = card.getAttribute("data-id");
-      window.location.href = `post.html?id=${encodeURIComponent(id)}`;
+      window.location.href = `post?id=${encodeURIComponent(id)}`;
     });
   });
 }

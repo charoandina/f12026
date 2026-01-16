@@ -1,5 +1,4 @@
 // ======================= calendar-accordion.js =======================
-// NOTE: Code comments in English (as requested).
 
 document.addEventListener("DOMContentLoaded", () => {
   const calendar = document.querySelector(".calendar_container");

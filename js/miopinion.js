@@ -88,7 +88,7 @@ function renderFeatured(post) {
 
   date.textContent = formatFechaTexto(post.fecha);
 
-  link.href = `post.html?id=${encodeURIComponent(post.id)}`;
+  link.href = `post?id=${encodeURIComponent(post.id)}`;
 }
 
 
@@ -114,11 +114,11 @@ function renderList(container, postsArr, count) {
   container.innerHTML = items.map((p) => cardHTML(p)).join("");
 
   // Click on card => go to post template
-  // Example: /post.html?id=norris-campeon-del-mundo
+  // Example: /post?id=norris-campeon-del-mundo
   container.querySelectorAll(".last_opinion").forEach((el) => {
     el.addEventListener("click", () => {
       const id = el.getAttribute("data-id");
-      window.location.href = `post.html?id=${encodeURIComponent(id)}`;
+      window.location.href = `post?id=${encodeURIComponent(id)}`;
     });
   });
 }

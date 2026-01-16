@@ -1,13 +1,12 @@
 // ======================= post.js =======================
-// NOTE: Code comments in English (as requested).
 
 document.addEventListener("DOMContentLoaded", init);
 
 async function init() {
-  // 1) Get post id from URL: /post.html?id=...
+  // 1) Get post id from URL: /post?id=...
   const id = getPostIdFromURL();
   if (!id) {
-    window.location.href = "miopinion.html";
+    window.location.href = "miopinion";
     return;
   }
 
@@ -151,7 +150,7 @@ async function renderLastOpinions(currentId) {
   container.querySelectorAll(".last_opinion").forEach(card => {
     card.addEventListener("click", () => {
       const id = card.getAttribute("data-id");
-      window.location.href = `/post.html?id=${encodeURIComponent(id)}`;
+      window.location.href = `/post?id=${encodeURIComponent(id)}`;
     });
   });
 }
@@ -184,7 +183,7 @@ function wireBackButton() {
 
   backBtn.addEventListener("click", () => {
     if (window.history.length > 1) window.history.back();
-    else window.location.href = "/miopinion.html";
+    else window.location.href = "/miopinion";
   });
 }
 
@@ -196,7 +195,7 @@ function renderNotFound(id) {
   if (contentEl) {
     contentEl.innerHTML = `
       <p>No existe una nota con id: <strong>${escapeHTML(id)}</strong>.</p>
-      <p><a href="miopinion.html">Volver a Mi Opinión</a></p>
+      <p><a href="miopinion">Volver a Mi Opinión</a></p>
     `;
   }
 }
@@ -208,7 +207,7 @@ function renderContentMissing(id) {
   contentEl.innerHTML = `
     <p>Encontré la nota en el JSON, pero falta el archivo:</p>
     <p><code>blog/content/${escapeHTML(id)}.html</code></p>
-    <p><a href="miopinion.html">Volver a Mi Opinión</a></p>
+    <p><a href="miopinion">Volver a Mi Opinión</a></p>
   `;
 }
 
