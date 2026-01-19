@@ -1,6 +1,12 @@
 # Activar el módulo de reescritura
 RewriteEngine On
 
+# Redirigir dominios específicos a www.telemetrico.com.ar
+RewriteCond %{HTTP_HOST} ^(www\.)?adrianpuente\.com\.ar$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?telemetricof1\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?telemetricof1\.com\.ar$ [NC]
+RewriteRule ^(.*)$ https://www.telemetrico.com.ar/$1 [R=301,L]
+
 # Redirigir URLs con .html a URLs sin extensión (301 permanente)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{THE_REQUEST} ^GET\ /[^?\s]+\.html

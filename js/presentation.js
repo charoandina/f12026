@@ -35,7 +35,16 @@ function initPresentations() {
         "img/presentation/rb-car-3.webp"
       ]
     },
-    "haas": { iso: "2026-01-19", class: "haas" },
+    "haas": { 
+      iso: "2026-01-19", 
+      class: "haas",
+      images: [
+        "img/presentation/haas-car-1.webp",
+        "img/presentation/haas-car-2.webp",
+        "img/presentation/haas-car-3.webp",
+        "img/presentation/haas-car-4.webp"
+      ]
+    },
     "audi": { iso: "2026-01-20", class: "audi" },
     "mercedes": { iso: "2026-01-22", class: "mercedes" },
     "alpine": { iso: "2026-01-23", class: "alpine" },

@@ -247,3 +247,31 @@ function escapeHTML(str) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
+
+
+// SHARE POST
+
+  document.addEventListener('DOMContentLoaded', function() {
+        // Obtener la URL actual y el título de la página
+        const currentUrl = encodeURIComponent(window.location.href);
+        const pageTitle = encodeURIComponent(document.title);
+
+        // Event listeners
+        document.querySelector('.share_x')?.addEventListener('click', function() {
+            const twitterUrl = `https://twitter.com/intent/tweet?url=${currentUrl}&text=${pageTitle}`;
+            window.open(twitterUrl, '_blank', 'width=600,height=400');
+        });
+
+        document.querySelector('.share_facebook')?.addEventListener('click', function() {
+            const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+            window.open(facebookUrl, '_blank', 'width=600,height=400');
+        });
+
+        document.querySelector('.share_instagram')?.addEventListener('click', function() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('¡Link copiado! Pégalo en tu post de Instagram.');
+            }).catch(() => {
+                alert('Por favor, copia este link manualmente: ' + window.location.href);
+            });
+        });
+    });
